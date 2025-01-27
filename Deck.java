@@ -14,5 +14,28 @@ public class Deck{
         }
         size = deck.length;
     }
+    
+    public boolean isEmpty(){
+        return (this.size == 0);
+    }
+    
+    public int size(){
+        return this.size;
+    }
+    
+    public Card deal(){
+        if (this.size > 0){
+            size--;
+            return cards[size];
+        }
+        else{
+            return null;
+        }
+    }
+    public String toString(){
+        for (int i = 0; i < size; i++){
+            
+        }
+        for (int j = size; )
+    }
 }
-
