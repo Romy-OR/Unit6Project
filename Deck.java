@@ -11,7 +11,7 @@ public class Deck{
                 count++;
             }
         }
-        ;
+        cards = deck;
         size = deck.length;
     }
     
@@ -33,9 +33,15 @@ public class Deck{
         }
     }
     public String toString(){
+        String inDeck = "";
+        String dealt = "";
+        end = this.length;
         for (int i = 0; i < size; i++){
-            
+            inDeck+= cards[i] + "/n";
         }
-        for (int j = size; )
+        for (int j = size; j < length; j++){
+            dealt+= cards[j] + "/n";
+        }
+        return ("size = " + size + "/nUndealt Cards:"
     }
 }
