@@ -42,6 +42,7 @@ public class Deck{
         for (int j = size; j < length; j++){
             dealt+= cards[j] + "/n";
         }
-        return ("size = " + size + "/nUndealt Cards:"
+        //return ("size = " + size + "/nUndealt Cards:/n" + inDeck + "/n/nDealt Cards:/n" + dealt); 
+        return ("/nUndealt Cards:/n" + inDeck + "/n/nDealt Cards:/n" + dealt);
     }
 }
