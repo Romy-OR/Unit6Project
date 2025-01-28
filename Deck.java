@@ -1,6 +1,6 @@
 public class Deck{
     private Card[] cards;
-    private size;
+    private int size;
     
     public Deck(String[] ranks, String[] suits, int[] points){
         Card[] deck = new Card[ranks.length * suits.length];
@@ -35,14 +35,14 @@ public class Deck{
     public String toString(){
         String inDeck = "";
         String dealt = "";
-        end = this.length;
+        int end = cards.length;
         for (int i = 0; i < size; i++){
-            inDeck+= cards[i] + "/n";
+            inDeck+= cards[i] + "\n";
         }
-        for (int j = size; j < length; j++){
-            dealt+= cards[j] + "/n";
+        for (int j = size; j < end; j++){
+            dealt+= cards[j] + "\n";
         }
         //return ("size = " + size + "/nUndealt Cards:/n" + inDeck + "/n/nDealt Cards:/n" + dealt); 
-        return ("/nUndealt Cards:/n" + inDeck + "/n/nDealt Cards:/n" + dealt);
+        return ("\nUndealt Cards:\n" + inDeck + "\n\nDealt Cards:\n" + dealt);
     }
 }
